@@ -5,6 +5,8 @@ Please note that they were customized for my system and may not work in your env
 ## Provided scripts
 `edit-nixos-config.sh` lets you edit your nixos configuration with neovim (as a user! If you need to edit as root, use sudo), commit and push changes, view the diff and rebuild your system. This requires you to have your nixos configuration set up as a flake (using `#default`). It does not take any command line arguments.
 
+`nixos-revert-last-change.sh` lets you revert the last git commit you made after you saw a diff (hard reset!). It then allows you to force push and rebuild.
+
 `nixos-collect-garbage.sh` is just a wrapper around `nix-collect-garbage -d`. Nothing fancy here.
 
 ## Dependencies
